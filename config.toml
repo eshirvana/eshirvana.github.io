@@ -45,12 +45,6 @@ paginate     = 10
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-[menu]
-  [[menu.main]]
-    identifier = "source"
-    name       = "source code"
-    url        = "https://github.com/eshirvana/eshirvana.github.io"
-
 [[params.social]]
   name = "github"
   url = "https://github.com/eshirvana/"
@@ -64,21 +58,9 @@ paginate     = 10
   url = "https://www.linkedin.com/in/eshirvana/"
 
 [[params.social]]
-  name = "twitter"
-  url = "https://twitter.com/eshirvana"
-
-[[params.social]]
     name = "email"
     url  = "mailto:ehsan@duck.com"
 
 [[params.social]]
-    name = "slack"
-    url  = "https://eshirvana.slack.com"
-
-[[params.social]]
     name = "instagram"
     url  = "https://instagram.com/eshirvana/"
-
-[[params.social]]
-    name = "gmail"
-    url  = "https://www.instagram.com/eshirvana/"
