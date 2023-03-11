@@ -1,8 +1,15 @@
 baseURL = 'https://eshirvana.github.io'
 languageCode = 'en-us'
 title = 'ehsan shirvanian'
-theme        = "hello-friend-ng"
-paginate     = 10
+theme = "hello-friend-ng"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+
+[author]
+  name = "ehsan shirvanian"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -24,7 +31,9 @@ paginate     = 10
   description = "My homepage"
   keywords = "homepage, blog"
   images = [""]
+  #backgroundImage = "https://source.unsplash.com/featured/1920x1080/"
 
+  enableThemeToggle = true
 [taxonomies]
     category = "blog"
     tag      = "tags"
@@ -39,12 +48,14 @@ paginate     = 10
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
+      logoMark     = " "
       logoText = "ehsan@home:~$"
       logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+      
+# [params.portrait]
+#   path     = "https://avatars.githubusercontent.com/u/72626662?v=4"
+#   alt      = "Portrait"
+#   maxWidth = "150px"
 
 [[params.social]]
   name = "github"
@@ -59,9 +70,28 @@ paginate     = 10
   url = "https://www.linkedin.com/in/eshirvana/"
 
 [[params.social]]
+    name = "instagram"
+    url  = "https://instagram.com/eshirvana/"
+
+[[params.social]]
     name = "email"
     url  = "mailto:ehsan@duck.com"
 
-[[params.social]]
-    name = "instagram"
-    url  = "https://instagram.com/eshirvana/"
+
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "~/about"
+    url        = "/about"
+
+  # [[menu.main]]
+  #   identifier = "posts"
+  #   name       = "~/posts"
+  #   url        = "posts/"
+
+[params.footer]
+  trademark = true
+  author = false
+  bottomText = ["exploring the world one bit at a time."]
+
