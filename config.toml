@@ -12,12 +12,13 @@ paginate     = 10
 
   # Subtitle for home
   homeSubtitle = "a data engineer, traveller, photographer"
+  # homeSubtitle = "exploring the world one bit at a time."
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
 
   # Enable sharing buttons, if you like
-  enableSharingButtons = true
+  enableSharingButtons = false
 
   # Metadata mostly used in document's head
   description = "My homepage"
@@ -38,7 +39,7 @@ paginate     = 10
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "hello"
+      logoText = "ehsan@home:~$"
       logoHomeLink = "/"
     # or
     #
