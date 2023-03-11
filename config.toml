@@ -1,11 +1,12 @@
 baseURL = 'https://eshirvana.github.io'
 languageCode = 'en-us'
+#defaultContentLanguage = 'fr'
 title = 'ehsan shirvanian'
 theme = "hello-friend-ng"
 
 paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+copyright = 'All Rights Reserved.'
 
 
 [author]
@@ -18,7 +19,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
   dateformNumTime = "2006-01-02 15:04"
 
   # Subtitle for home
-  homeSubtitle = "a data engineer, traveller, photographer"
+  # homeSubtitle = "data engineer, traveler, photographer"
   # homeSubtitle = "exploring the world one bit at a time."
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
@@ -33,25 +34,39 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
   images = [""]
   #backgroundImage = "https://source.unsplash.com/featured/1920x1080/"
 
+
   enableThemeToggle = true
+
 [taxonomies]
     category = "blog"
     tag      = "tags"
     series   = "series"
 
+
 [languages]
   [languages.en]
     title = "Ehsan Shirvanian"
-    subtitle = ""
+    homeSubtitle = "data engineer, traveler, photographer"
     keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
-
+    weight = 1
     [languages.en.params.logo]
       logoMark     = " "
       logoText = "ehsan@home:~$"
       logoHomeLink = "/"
       
+  [languages.fr]
+    title = "Ehsan Shirvanian"
+    homeSubtitle = "Ingénieur de données, voyageur, photographe"
+    keywords = ""
+    readOtherPosts = "Read other posts"
+    weight    = 2
+
+  [languages.fr.params.logo]
+    logoMark     = " "
+    logoText = "ehsan@home:~$"
+    logoHomeLink = "/"
+
 # [params.portrait]
 #   path     = "https://avatars.githubusercontent.com/u/72626662?v=4"
 #   alt      = "Portrait"
@@ -60,6 +75,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 [[params.social]]
   name = "github"
   url = "https://github.com/eshirvana/"
+
 
 [[params.social]]
   name = "stackoverflow"
@@ -91,7 +107,9 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
   #   url        = "posts/"
 
 [params.footer]
-  trademark = true
+  trademark = false
   author = false
+  copyright= false
+  topText = ['<a href="https://www.womenlifefreedom.com/" target="_blank" style="text-decoration: none" rel="external">#womanlifefreedom</a>']
   bottomText = ["exploring the world one bit at a time."]
 
