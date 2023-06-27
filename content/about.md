@@ -27,4 +27,4 @@ I enjoy playing with data and here is the list of my toys:
 
 I'm a big fan of open source and I've contributed to couple of projects like pandas and scipy on github.
 
-I also like to take pictures wherever I go. You can check my photos on [instagram](https://www.linkedin.com/in/eshirvana/) or [flickr](https://www.flickr.com/photos/shirvana/).
+I also like to take pictures wherever I go. You can check my photos on [instagram](https://www.instagram.com/eshirvana/) or [flickr](https://www.flickr.com/photos/shirvana/).
