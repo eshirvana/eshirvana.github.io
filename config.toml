@@ -80,7 +80,7 @@ copyright = 'All Rights Reserved.'
 
 [[params.social]]
   name = "stackoverflow"
-  url = "https://stackoverflow.com/users/1367454/eshirvana"
+  url = "https://stackoverflow.com/u/1367454/"
 
 [[params.social]]
   name = "linkedin"
