@@ -47,12 +47,13 @@ copyright = 'All Rights Reserved.'
   [languages.en]
     title = "Ehsan Shirvanian"
     homeSubtitle = "data engineer, traveler, photographer"
+    homeSubtitle2 = "data engineer, traveler, photographer"
     keywords = ""
     readOtherPosts = "Read other posts"
     weight = 1
     [languages.en.params.logo]
       logoMark     = " "
-      logoText = "ehsan@home:~$"
+      logoText = "you@home:~$"
       logoHomeLink = "/"
       
   [languages.fr]
@@ -83,7 +84,7 @@ copyright = 'All Rights Reserved.'
 
 [[params.social]]
   name = "linkedin"
-  url = "https://www.linkedin.com/in/eshirvana/"
+  url = "https://www.linkedin.com/in/shirvanian/"
 
 [[params.social]]
     name = "instagram"
