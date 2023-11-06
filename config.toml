@@ -74,17 +74,16 @@ copyright = 'All Rights Reserved.'
 #   maxWidth = "150px"
 
 [[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/shirvanian/"
+
+[[params.social]]
   name = "github"
   url = "https://github.com/eshirvana/"
-
 
 [[params.social]]
   name = "stackoverflow"
   url = "https://stackoverflow.com/u/1367454/"
-
-[[params.social]]
-  name = "linkedin"
-  url = "https://www.linkedin.com/in/shirvanian/"
 
 [[params.social]]
     name = "instagram"
@@ -93,8 +92,6 @@ copyright = 'All Rights Reserved.'
 [[params.social]]
     name = "email"
     url  = "mailto:ehsan@duck.com"
-
-
 
 [menu]
   [[menu.main]]
