@@ -53,7 +53,7 @@ copyright = 'All Rights Reserved.'
     weight = 1
     [languages.en.params.logo]
       logoMark     = " "
-      logoText = "you@home:~$"
+      logoText = "ehsan@home:~$"
       logoHomeLink = "/"
       
   [languages.fr]
