@@ -8,11 +8,9 @@ paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = 'All Rights Reserved.'
 
-
-[author]
-  name = "ehsan shirvanian"
-
 [params]
+    [params.author]
+      name = "ehsan shirvanian"
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
@@ -42,31 +40,31 @@ copyright = 'All Rights Reserved.'
     tag      = "tags"
     series   = "series"
 
-
 [languages]
   [languages.en]
-    title = "Ehsan Shirvanian"
-    homeSubtitle = "data engineer, traveler, photographer"
-    homeSubtitle2 = "data engineer, traveler, photographer"
-    keywords = ""
-    readOtherPosts = "Read other posts"
-    weight = 1
-    [languages.en.params.logo]
-      logoMark     = " "
-      logoText = "ehsan@home:~$"
-      logoHomeLink = "/"
+    [languages.en.params]
+      title = "Ehsan Shirvanian"
+      homeSubtitle = "data engineer, traveler, photographer"
+      homeSubtitle2 = "data engineer, traveler, photographer"
+      keywords = ""
+      readOtherPosts = "Read other posts"
+      weight = 1
+      [languages.en.params.logo]
+        logoMark     = " "
+        logoText = "ehsan@home:~$"
+        logoHomeLink = "/"
       
   [languages.fr]
-    title = "Ehsan Shirvanian"
-    homeSubtitle = "Ingénieur de données, voyageur, photographe"
-    keywords = ""
-    readOtherPosts = "Read other posts"
-    weight    = 2
-
-  [languages.fr.params.logo]
-    logoMark     = " "
-    logoText = "ehsan@home:~$"
-    logoHomeLink = "/"
+    [languages.fr.params]
+      title = "Ehsan Shirvanian"
+      homeSubtitle = "Ingénieur de données, voyageur, photographe"
+      keywords = ""
+      readOtherPosts = "Read other posts"
+      weight    = 2
+      [languages.fr.params.logo]
+        logoMark     = " "
+        logoText = "ehsan@home:~$"
+        logoHomeLink = "/"
 
 # [params.portrait]
 #   path     = "https://avatars.githubusercontent.com/u/72626662?v=4"
