@@ -106,6 +106,5 @@ copyright = 'All Rights Reserved.'
   trademark = false
   author = false
   copyright= false
-  topText = ['<a href="https://www.womenlifefreedom.com/" target="_blank" style="text-decoration: none" rel="external">#womanlifefreedom</a>']
   bottomText = ["exploring the world one bit at a time."]
 
