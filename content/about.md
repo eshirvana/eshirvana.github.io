@@ -6,7 +6,7 @@ aliases = ["about-us","contact"]
   name = "ehsan shirvanian"
 +++
 
-Hello there!
+Hello there! 👋
 
 I’m Ehsan, a data enthusiast who loves diving deep into the world of bytes, pipelines, and distributed systems. Think of me as a kid in a candy store—except the candy is my ever-growing toolkit of tech toys:
 
@@ -27,7 +27,7 @@ I’m Ehsan, a data enthusiast who loves diving deep into the world of bytes, pi
 
 I’m also a huge fan of open source and proud to have contributed to projects like Pandas and SciPy on GitHub. It’s always exciting to give back to the community that’s taught me so much.
 
-When I’m not wrangling data or optimizing workflows, I enjoy capturing the beauty of the world through my camera lens. Whether it’s a stunning landscape or a candid moment, photography is my creative outlet. You can check out some of my shots on [instagram](https://www.instagram.com/eshirvana/) or [flickr](https://www.flickr.com/photos/shirvana/).
+When I’m not wrangling data or optimizing workflows, I enjoy capturing the beauty of the world through my camera lens 📷. Whether it’s a stunning landscape or a candid moment, photography is my creative outlet. You can check out some of my shots on [instagram](https://www.instagram.com/eshirvana/) or [flickr](https://www.flickr.com/photos/shirvana/).
 
 Curious about my work or just want to geek out about tech, data, or photography? 
 Drop me a line—let’s connect! 🚀
