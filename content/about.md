@@ -30,4 +30,4 @@ I’m also a huge fan of open source and proud to have contributed to projects l
 When I’m not wrangling data or optimizing workflows, I enjoy capturing the beauty of the world through my camera lens. Whether it’s a stunning landscape or a candid moment, photography is my creative outlet. You can check out some of my shots on [instagram](https://www.instagram.com/eshirvana/) or [flickr](https://www.flickr.com/photos/shirvana/).
 
 Curious about my work or just want to geek out about tech, data, or photography? 
-Drop me a line—let’s connect!
+Drop me a line—let’s connect! 🚀
