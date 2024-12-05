@@ -10,20 +10,20 @@ Hello there!
 
 I’m Ehsan, a data enthusiast who loves diving deep into the world of bytes, pipelines, and distributed systems. Think of me as a kid in a candy store—except the candy is my ever-growing toolkit of tech toys:
 
-    Linux: Bash, shell scripts
-    Languages: Python, SQL, YAML
-    Distributed Engines: Spark, Kafka
-    Cloud Services: GCS, AWS
-    Data Analytics Tools: Pandas, Dask, Polars
-    BI Tools: dbt, SSIS, Mode
-    SQL Engines: SQL Server, PostgreSQL, Clickhouse, Trino
-    NoSQL: MongoDB, Cassandra
-    Data Warehouses: Snowflake, BigQuery
-    Data Visualization: Apache Superset, Power BI, Matplotlib
-    Data Storage: Kafka (Schema Registry), Apache Parquet, Delta Lake
-    Data Orchestration: Apache Airflow, Dagster, cron
-    Containers: Docker, Nomad, Kubernetes
-    CI/CD Tools: Concourse CI, GitHub Actions, Jenkins
+* Linux: Bash, shell scripts
+* Languages: Python, SQL, YAML
+* Distributed Engines: Spark, Kafka
+* Cloud Services: GCS, AWS
+* Data Analytics Tools: Pandas, Dask, Polars
+* BI Tools: dbt, SSIS, Mode
+* SQL Engines: SQL Server, PostgreSQL, Clickhouse, Trino
+* NoSQL: MongoDB, Cassandra
+* Data Warehouses: Snowflake, BigQuery
+* Data Visualization: Apache Superset, Power BI, Matplotlib
+* Data Storage: Kafka (Schema Registry), Apache Parquet, Delta Lake
+* Data Orchestration: Apache Airflow, Dagster, cron
+* Containers: Docker, Nomad, Kubernetes
+* CI/CD Tools: Concourse CI, GitHub Actions, Jenkins
 
 I’m also a huge fan of open source and proud to have contributed to projects like Pandas and SciPy on GitHub. It’s always exciting to give back to the community that’s taught me so much.
 
