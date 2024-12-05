@@ -1,30 +1,32 @@
 +++
 title = "about me"
-date = "2023-03-11"
+date = "2024-12-05"
 aliases = ["about-us","contact"]
 [ author ]
   name = "ehsan shirvanian"
 +++
 
-Hello, 
+Hello there!
 
-I enjoy playing with data and here is the list of my toys:
+I’m Ehsan, a data enthusiast who loves diving deep into the world of bytes, pipelines, and distributed systems. Think of me as a kid in a candy store—except the candy is my ever-growing toolkit of tech toys:
 
-* Linux: bash, shell scripts
-* Languages: Python, sql, yaml
-* distributed engines: Spark, Kafka 
-* cloud services: GCS, AWS 
-* data analytics tools: Pandas, Dask, Polars
-* BI tools: dbt, SSIS, Mode
-* sql engines: Sql Server, Postgrsql, Clickhouse, Trino
-* noSQL: MongoDB, Cassandra
-* data warehouse: Snowflake, BigQuery
-* data visulization: Apache Superset, PowerBI , MatPlotlib
-* data storage: Kafka (schema registry), Apache Parquet, Delta lake
-* data orchestration: Apache Airflow, Dagster, cron
-* containers: Docker, Nomad, K8
-* ci/cd tools: concourse ci , github Actions, Jenkins
+    Linux: Bash, shell scripts
+    Languages: Python, SQL, YAML
+    Distributed Engines: Spark, Kafka
+    Cloud Services: GCS, AWS
+    Data Analytics Tools: Pandas, Dask, Polars
+    BI Tools: dbt, SSIS, Mode
+    SQL Engines: SQL Server, PostgreSQL, Clickhouse, Trino
+    NoSQL: MongoDB, Cassandra
+    Data Warehouses: Snowflake, BigQuery
+    Data Visualization: Apache Superset, Power BI, Matplotlib
+    Data Storage: Kafka (Schema Registry), Apache Parquet, Delta Lake
+    Data Orchestration: Apache Airflow, Dagster, cron
+    Containers: Docker, Nomad, Kubernetes
+    CI/CD Tools: Concourse CI, GitHub Actions, Jenkins
 
-I'm a big fan of open source and I've contributed to couple of projects like pandas and scipy on github.
+I’m also a huge fan of open source and proud to have contributed to projects like Pandas and SciPy on GitHub. It’s always exciting to give back to the community that’s taught me so much.
 
-I also like to take pictures wherever I go. You can check my photos on [instagram](https://www.instagram.com/eshirvana/) or [flickr](https://www.flickr.com/photos/shirvana/).
+When I’m not wrangling data or optimizing workflows, I enjoy capturing the beauty of the world through my camera lens. Whether it’s a stunning landscape or a candid moment, photography is my creative outlet. You can check out some of my shots on [instagram](https://www.instagram.com/eshirvana/) or [flickr](https://www.flickr.com/photos/shirvana/).
+
+Curious about my work or just want to geek out about tech, data, or photography? Drop me a line—let’s connect!
