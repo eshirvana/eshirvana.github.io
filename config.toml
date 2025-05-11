@@ -89,7 +89,7 @@ copyright = 'All Rights Reserved.'
 
 [[params.social]]
     name = "email"
-    url  = "mailto:ehsan@duck.com"
+    url  = "mailto:ehsan@shirvanian.dev"
 
 [menu]
   [[menu.main]]
