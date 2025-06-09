@@ -80,6 +80,10 @@ copyright = 'All Rights Reserved.'
   url = "https://github.com/eshirvana/"
 
 [[params.social]]
+    name = "wellfound"
+    url  = "https://wellfound.com/u/eshirvana"
+
+[[params.social]]
   name = "stackoverflow"
   url = "https://stackoverflow.com/u/1367454/"
 
