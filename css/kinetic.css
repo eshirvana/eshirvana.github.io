@@ -141,7 +141,8 @@ body.k-hovered .k-cursor-ring { width: 60px; height: 60px; border-color: rgba(25
   cursor: none;
 }
 .k-logo:hover { color: var(--orange); }
-.k-logo-tld { color: var(--orange); font-weight: 500; }
+.k-logo .k-logo-tld,
+.k-footer-logo .k-logo-tld { color: var(--orange); font-weight: 500; }
 
 .k-nav-menu { display: flex; gap: 36px; }
 .k-nav-link {
