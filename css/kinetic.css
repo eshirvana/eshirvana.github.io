@@ -152,6 +152,8 @@ body.k-hovered .k-cursor-ring { width: 60px; height: 60px; border-color: rgba(25
   transition: color 0.2s;
   cursor: none;
   position: relative;
+  padding: 6px 0;
+  touch-action: manipulation;
 }
 .k-nav-link::after {
   content: '';
@@ -171,7 +173,9 @@ body.k-hovered .k-cursor-ring { width: 60px; height: 60px; border-color: rgba(25
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px;
+  padding: 11px 8px;
+  margin: -11px -8px;
+  touch-action: manipulation;
 }
 .k-hamburger span {
   display: block;
@@ -260,10 +264,10 @@ body.k-loaded .k-hero-inner { opacity: 1; transform: translateY(0); }
 
 .k-title {
   font-family: var(--sg);
-  font-size: clamp(76px, 14vw, 200px);
+  font-size: clamp(44px, 12vw, 200px);
   font-weight: 700;
-  line-height: 0.88;
-  letter-spacing: -0.045em;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
   margin-bottom: 28px;
 }
 .k-orange { color: var(--orange); }
@@ -290,6 +294,7 @@ body.k-loaded .k-hero-inner { opacity: 1; transform: translateY(0); }
   letter-spacing: 0.02em;
   transition: background 0.2s, transform 0.2s;
   cursor: none;
+  touch-action: manipulation;
 }
 .k-btn-fill:hover { background: var(--orange-bright); transform: translateY(-2px); }
 
@@ -304,6 +309,7 @@ body.k-loaded .k-hero-inner { opacity: 1; transform: translateY(0); }
   letter-spacing: 0.02em;
   transition: border-color 0.2s, color 0.2s, transform 0.2s;
   cursor: none;
+  touch-action: manipulation;
 }
 .k-btn-outline:hover { border-color: rgba(255,255,255,0.24); color: var(--text); transform: translateY(-2px); }
 
@@ -608,8 +614,27 @@ body.k-loaded .k-hero-inner { opacity: 1; transform: translateY(0); }
   .k-btn-fill, .k-btn-outline { cursor: auto; }
   .k-link, .k-logo, .k-nav-link, .k-footer-logo { cursor: auto; }
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .k-hero-cta { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
   .k-stats { grid-template-columns: 1fr; }
   .k-cg { grid-template-columns: 1fr; }
+}
+
+/* ═══ TOUCH DEVICES — disable hover transforms ═══════════════ */
+@media (hover: none) {
+  .k-btn-fill:hover  { transform: none; }
+  .k-btn-outline:hover { transform: none; }
+  .k-stat:hover      { transform: none; }
+  .k-sr:hover        { padding-left: 0; background: none; }
+  .k-sr:hover::before { opacity: 0; transform: scaleY(0); }
+  .k-cc:hover        { transform: none; }
+  .k-cc-arr          { opacity: 1; transform: translate(0, 0); }
+}
+
+/* ═══ LANDSCAPE PHONES — short viewports ════════════════════ */
+@media (max-height: 580px) and (orientation: landscape) {
+  .k-hero { height: auto; min-height: 100svh; padding: 100px 0 60px; }
+  .k-hero-foot { display: none; }
 }
