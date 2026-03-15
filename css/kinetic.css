@@ -298,9 +298,6 @@ body.k-loaded .k-hero-inner { opacity: 1; transform: translateY(0); }
   font-size: 13px;
   font-weight: 500;
   padding: 13px 28px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
   border: 1px solid var(--border-2);
   border-radius: 6px;
   color: var(--text-2);
