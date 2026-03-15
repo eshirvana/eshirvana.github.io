@@ -60,7 +60,7 @@
   }
   animateRing();
 
-  document.querySelectorAll('a, button, .k-sr').forEach(el => {
+  document.querySelectorAll('a, button, .k-sr, .k-cc').forEach(el => {
     el.addEventListener('mouseenter', () => document.body.classList.add('k-hovered'));
     el.addEventListener('mouseleave', () => document.body.classList.remove('k-hovered'));
   });
