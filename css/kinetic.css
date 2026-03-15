@@ -264,7 +264,7 @@ body.k-loaded .k-hero-inner { opacity: 1; transform: translateY(0); }
 
 .k-title {
   font-family: var(--sg);
-  font-size: clamp(44px, 12vw, 200px);
+  font-size: clamp(44px, 16vw, 200px);
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: -0.04em;
