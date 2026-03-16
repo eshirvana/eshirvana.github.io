@@ -1,13 +1,12 @@
-# Generated files by hugo
+# macOS
+.DS_Store
+
+# Hugo leftovers (no longer used)
 /public/
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
-
-# Executable may be added to repository
 hugo.exe
 hugo.darwin
 hugo.linux
-
-# Temporary lock file while building
-/.hugo_build.lock
+.hugo_build.lock
