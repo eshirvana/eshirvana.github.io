@@ -561,7 +561,27 @@ body.k-loaded .k-hero-inner { opacity: 1; transform: translateY(0); }
   cursor: none;
 }
 .k-footer-logo:hover { color: var(--orange); }
-.k-footer-q { font-size: 14px; color: var(--text-2); font-style: italic; }
+.k-footer-q { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.k-footer-q1 {
+  font-family: var(--sg);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-2);
+  letter-spacing: 0.01em;
+}
+.k-footer-q2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--sg);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-3);
+  letter-spacing: 0.04em;
+}
+.k-footer-q2 svg { color: var(--orange); flex-shrink: 0; }
+.k-footer-claude { color: var(--orange); }
+.k-footer-sep { color: var(--border-2); }
 .k-footer-c { font-family: var(--sg); font-size: 11px; color: var(--text-3); }
 
 /* ═══ RESPONSIVE ════════════════════════════════════════════════ */
