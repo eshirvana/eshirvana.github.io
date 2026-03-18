@@ -26,6 +26,19 @@
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ═══ LIGHT THEME ═════════════════════════════════════════════ */
+[data-theme="light"] {
+  --bg:      #f7f7f5;
+  --bg-2:    #eeedea;
+  --bg-3:    #e4e3e0;
+  --surface: #ffffff;
+  --border:  rgba(0,0,0,0.08);
+  --border-2: rgba(0,0,0,0.14);
+  --text:    #0f0f0f;
+  --text-2:  #555555;
+  --text-3:  #999999;
+}
+
 /* ═══ RESET ═══════════════════════════════════════════════════ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -584,6 +597,42 @@ body.k-loaded .k-hero-inner { opacity: 1; transform: translateY(0); }
 .k-footer-sep { color: var(--border-2); }
 .k-footer-c { font-family: var(--sg); font-size: 11px; color: var(--text-3); }
 
+/* ═══ THEME TOGGLE ═════════════════════════════════════════════ */
+.k-theme-toggle {
+  background: none;
+  border: 1px solid var(--border-2);
+  border-radius: 6px;
+  color: var(--text-2);
+  cursor: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  flex-shrink: 0;
+}
+.k-theme-toggle:hover {
+  color: var(--orange);
+  border-color: rgba(255,85,0,0.4);
+  background: var(--orange-dim);
+}
+.k-theme-toggle .k-icon-sun { display: none; }
+.k-theme-toggle .k-icon-moon { display: block; }
+[data-theme="light"] .k-theme-toggle .k-icon-sun { display: block; }
+[data-theme="light"] .k-theme-toggle .k-icon-moon { display: none; }
+
+/* ═══ LIGHT MODE — NAV & MOBILE OVERLAY ═══════════════════════ */
+[data-theme="light"] .k-nav.scrolled {
+  background: rgba(247,247,245,0.93);
+}
+@media (max-width: 768px) {
+  [data-theme="light"] .k-nav-menu {
+    background: rgba(247,247,245,0.98);
+  }
+}
+
 /* ═══ RESPONSIVE ════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
   .k-about-grid { grid-template-columns: 1fr; gap: 52px; }
@@ -617,6 +666,7 @@ body.k-loaded .k-hero-inner { opacity: 1; transform: translateY(0); }
   .k-stats { grid-template-columns: 1fr 1fr; }
   .k-btn-fill, .k-btn-outline { cursor: auto; }
   .k-link, .k-logo, .k-nav-link, .k-footer-logo { cursor: auto; }
+  .k-theme-toggle { cursor: pointer; }
 }
 @media (max-width: 480px) {
   .k-stats { grid-template-columns: 1fr; }
