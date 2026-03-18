@@ -154,6 +154,28 @@
 })();
 
 /* ═══════════════════════════════════════════════════════════
+   THEME TOGGLE — light / dark with localStorage persistence
+   ═══════════════════════════════════════════════════════════ */
+(function () {
+  const btn = document.getElementById('k-theme-toggle');
+  if (!btn) return;
+
+  const stored = localStorage.getItem('k-theme');
+  if (stored === 'light') document.documentElement.setAttribute('data-theme', 'light');
+
+  btn.addEventListener('click', () => {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('k-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('k-theme', 'light');
+    }
+  });
+})();
+
+/* ═══════════════════════════════════════════════════════════
    PAGE LOAD
    ═══════════════════════════════════════════════════════════ */
 window.addEventListener('load', () => {
