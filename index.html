@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ehsan Shirvanian — Data Engineer</title>
   <meta name="description" content="Data engineer, traveler, and photographer. Building scalable data pipelines and distributed systems.">
-  <meta name="theme-color" content="#070707">
+  <meta name="theme-color" content="#141414">
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -13,294 +13,313 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/css/kinetic.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script>
-    (function(){var t=localStorage.getItem('k-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})();
+    (function(){var t=localStorage.getItem('b-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})();
   </script>
 </head>
 <body>
 
-<!-- ══════════════════════════════════ CURSOR ═══ -->
-<div class="k-cursor" id="k-cursor"></div>
-<div class="k-cursor-ring" id="k-cursor-ring"></div>
+<!-- ══════════════════════════════════ NAV ══════════════════ -->
+<nav class="b-nav" id="b-nav">
+  <div class="b-nav-inner">
+    <a href="#" class="b-logo">ehsan<span class="b-logo-dot">.codes</span></a>
 
-<!-- ══════════════════════════════════ NAV ═══════ -->
-<nav class="k-nav" id="k-nav">
-  <div class="k-nav-inner">
-    <a href="#" class="k-logo">ehsan<span class="k-logo-tld">.codes</span></a>
-    <ul class="k-nav-menu" id="k-nav-menu">
-      <li><a href="#k-about" class="k-nav-link">about</a></li>
-      <li><a href="#k-skills" class="k-nav-link">skills</a></li>
-      <li><a href="#k-contact" class="k-nav-link">contact</a></li>
+    <ul class="b-nav-links" id="b-nav-links">
+      <li><a href="#b-about"   class="b-nav-link">about</a></li>
+      <li><a href="#b-skills"  class="b-nav-link">skills</a></li>
+      <li><a href="#b-contact" class="b-nav-link">contact</a></li>
     </ul>
-    <div class="k-nav-right">
-      <button class="k-theme-toggle" id="k-theme-toggle" aria-label="Toggle light/dark theme">
-        <!-- sun icon (shown in light mode) -->
-        <svg class="k-icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="4.5"/>
-          <line x1="12" y1="2" x2="12" y2="4"/>
-          <line x1="12" y1="20" x2="12" y2="22"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+
+    <div class="b-nav-actions">
+      <button class="b-theme-btn" id="b-theme-btn" aria-label="Toggle light/dark theme">
+        <svg class="b-icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <line x1="12" y1="2"  x2="12" y2="4"/>  <line x1="12" y1="20" x2="12" y2="22"/>
+          <line x1="4.22" y1="4.22"   x2="5.64" y2="5.64"/>
           <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="2" y1="12" x2="4" y2="12"/>
-          <line x1="20" y1="12" x2="22" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          <line x1="2" y1="12" x2="4" y2="12"/>    <line x1="20" y1="12" x2="22" y2="12"/>
+          <line x1="4.22" y1="19.78"  x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
         </svg>
-        <!-- moon icon (shown in dark mode) -->
-        <svg class="k-icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="b-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
         </svg>
       </button>
-      <button class="k-hamburger" id="k-hamburger" aria-label="Toggle navigation">
+      <button class="b-menu-btn" id="b-menu-btn" aria-label="Toggle navigation">
         <span></span><span></span>
       </button>
     </div>
   </div>
 </nav>
 
-<!-- ══════════════════════════════════ HERO ══════ -->
-<section class="k-hero">
-  <div class="k-hero-bg"></div>
+<!-- ══════════════════════════════════ BENTO GRID ═══════════ -->
+<div class="b-bento">
 
-  <div class="k-hero-inner">
-    <div class="k-eyebrow">
-      <span class="k-num">01</span>
-      <span class="k-badge"><span class="k-pulse-dot"></span>data engineer</span>
+  <!-- ── INTRO CARD ─────────────────────────────────────── -->
+  <div class="b-card b-card--intro">
+    <div class="b-intro-eyebrow">
+      <span class="b-eyebrow-text">data engineer</span>
+      <span class="b-blinker" aria-hidden="true">█</span>
     </div>
 
-    <h1 class="k-title">
-      <span class="k-scramble" data-text="EHSAN">EHSAN</span><br>
-      <span class="k-scramble k-orange" data-text="SHIRVANIAN">SHIRVANIAN</span>
+    <h1 class="b-intro-title">
+      <span class="b-scramble" data-text="EHSAN">EHSAN</span><br>
+      <span class="b-scramble b-hl" data-text="SHIRVANIAN">SHIRVANIAN</span>
     </h1>
 
-    <p class="k-tagline">data engineer &nbsp;·&nbsp; traveler &nbsp;·&nbsp; photographer</p>
+    <p class="b-intro-sub">data engineer &nbsp;·&nbsp; traveler &nbsp;·&nbsp; photographer</p>
 
-    <div class="k-hero-cta">
-      <a href="#k-about" class="k-btn-fill">explore ↓</a>
-      <a href="mailto:ehsan.shirvanian@gmail.com" class="k-btn-outline">get in touch →</a>
+    <div class="b-intro-cta">
+      <a href="#b-about"                          class="b-btn-primary">explore ↓</a>
+      <a href="mailto:ehsan.shirvanian@gmail.com" class="b-btn-ghost">get in touch ↗</a>
     </div>
   </div>
 
-  <div class="k-hero-foot">
-    <span class="k-scroll-label">scroll to explore</span>
-    <div class="k-scroll-line"><div class="k-scan"></div></div>
+  <!-- ── STATS CARD ─────────────────────────────────────── -->
+  <div class="b-card b-card--stats">
+    <div class="b-stat-cell">
+      <div class="b-stat-num"><span data-target="30">0</span>+</div>
+      <div class="b-stat-lbl">technologies</div>
+    </div>
+    <div class="b-stat-cell">
+      <div class="b-stat-num"><span data-target="2">0</span>+</div>
+      <div class="b-stat-lbl">OSS projects</div>
+    </div>
+    <div class="b-stat-cell">
+      <div class="b-stat-num">∞</div>
+      <div class="b-stat-lbl">places explored</div>
+    </div>
+    <div class="b-stat-cell">
+      <div class="b-stat-num"><span data-target="1000">0</span>+</div>
+      <div class="b-stat-lbl">photos taken</div>
+    </div>
   </div>
-</section>
 
-<!-- ══════════════════════════════════ TICKER ════ -->
-<div class="k-ticker" aria-hidden="true">
-  <div class="k-ticker-track">
-    <span class="k-ti">PYTHON</span><span class="k-td">·</span>
-    <span class="k-ti">RUST</span><span class="k-td">·</span>
-    <span class="k-ti">SQL</span><span class="k-td">·</span>
-    <span class="k-ti">APACHE SPARK</span><span class="k-td">·</span>
-    <span class="k-ti">KAFKA</span><span class="k-td">·</span>
-    <span class="k-ti">SNOWFLAKE</span><span class="k-td">·</span>
-    <span class="k-ti">BIGQUERY</span><span class="k-td">·</span>
-    <span class="k-ti">KUBERNETES</span><span class="k-td">·</span>
-    <span class="k-ti">AIRFLOW</span><span class="k-td">·</span>
-    <span class="k-ti">DAGSTER</span><span class="k-td">·</span>
-    <span class="k-ti">DASK</span><span class="k-td">·</span>
-    <span class="k-ti">POLARS</span><span class="k-td">·</span>
-    <span class="k-ti">DBT</span><span class="k-td">·</span>
-    <span class="k-ti">DOCKER</span><span class="k-td">·</span>
-    <span class="k-ti">PANDAS</span><span class="k-td">·</span>
-    <span class="k-ti">POSTGRESQL</span><span class="k-td">·</span>
-    <span class="k-ti">CLICKHOUSE</span><span class="k-td">·</span>
-    <span class="k-ti">DELTA LAKE</span><span class="k-td">·</span>
-    <span class="k-ti">DATABRICKS</span><span class="k-td">·</span>
-    <span class="k-ti">GITHUB ACTIONS</span><span class="k-td">·</span>
-    <span class="k-ti">AWS</span><span class="k-td">·</span>
-    <span class="k-ti">GCP</span><span class="k-td">·</span>
-    <span class="k-ti">POWER BI</span><span class="k-td">·</span>
-    <span class="k-ti">SUPERSET</span><span class="k-td">·</span>
-    <!-- duplicate for seamless loop -->
-    <span class="k-ti">PYTHON</span><span class="k-td">·</span>
-    <span class="k-ti">RUST</span><span class="k-td">·</span>
-    <span class="k-ti">SQL</span><span class="k-td">·</span>
-    <span class="k-ti">APACHE SPARK</span><span class="k-td">·</span>
-    <span class="k-ti">KAFKA</span><span class="k-td">·</span>
-    <span class="k-ti">SNOWFLAKE</span><span class="k-td">·</span>
-    <span class="k-ti">BIGQUERY</span><span class="k-td">·</span>
-    <span class="k-ti">KUBERNETES</span><span class="k-td">·</span>
-    <span class="k-ti">AIRFLOW</span><span class="k-td">·</span>
-    <span class="k-ti">DAGSTER</span><span class="k-td">·</span>
-    <span class="k-ti">DASK</span><span class="k-td">·</span>
-    <span class="k-ti">POLARS</span><span class="k-td">·</span>
-    <span class="k-ti">DBT</span><span class="k-td">·</span>
-    <span class="k-ti">DOCKER</span><span class="k-td">·</span>
-    <span class="k-ti">PANDAS</span><span class="k-td">·</span>
-    <span class="k-ti">POSTGRESQL</span><span class="k-td">·</span>
-    <span class="k-ti">CLICKHOUSE</span><span class="k-td">·</span>
-    <span class="k-ti">DELTA LAKE</span><span class="k-td">·</span>
-    <span class="k-ti">DATABRICKS</span><span class="k-td">·</span>
-    <span class="k-ti">GITHUB ACTIONS</span><span class="k-td">·</span>
-    <span class="k-ti">AWS</span><span class="k-td">·</span>
-    <span class="k-ti">GCP</span><span class="k-td">·</span>
-    <span class="k-ti">POWER BI</span><span class="k-td">·</span>
-    <span class="k-ti">SUPERSET</span><span class="k-td">·</span>
+  <!-- ── BIO CARD ───────────────────────────────────────── -->
+  <div class="b-card b-card--bio" id="b-about">
+    <p class="b-card-label">// 01 — about</p>
+    <p class="b-bio-text">I'm Ehsan, a data enthusiast who loves diving deep into the world of bytes, pipelines, and distributed systems. Think of me as a kid in a candy store — except the candy is tech.</p>
+    <p class="b-bio-text">Proud contributor to open source projects like <em>Pandas</em> and <em>SciPy</em> — giving back to the community that has taught me so much.</p>
+    <p class="b-bio-text">When not wrangling data, I'm out capturing the world through my camera lens — from sweeping landscapes to candid human moments.</p>
+    <div class="b-bio-links">
+      <a href="https://www.linkedin.com/in/shirvanian/" target="_blank" rel="noopener" class="b-link">linkedin ↗</a>
+      <a href="https://github.com/eshirvana/"           target="_blank" rel="noopener" class="b-link">github ↗</a>
+      <a href="https://www.instagram.com/eshirvana/"    target="_blank" rel="noopener" class="b-link">instagram ↗</a>
+    </div>
   </div>
-</div>
 
-<!-- ══════════════════════════════════ ABOUT ═════ -->
-<section class="k-about" id="k-about">
-  <div class="k-container">
-    <p class="k-label">// 01 — about</p>
-    <div class="k-about-grid">
+  <!-- ── SKILLS CARD ────────────────────────────────────── -->
+  <div class="b-card b-card--skills" id="b-skills">
+    <div class="b-card-header">
+      <p class="b-card-label">// 02 — skills</p>
+      <h2 class="b-card-title">The Stack</h2>
+    </div>
 
-      <div class="k-about-left">
-        <h2 class="k-heading">Hello there 👋</h2>
-        <div class="k-about-body">
-          <p>I'm Ehsan, a data enthusiast who loves diving deep into the world of bytes, pipelines, and distributed systems. Think of me as a kid in a candy store—except the candy is my ever-growing toolkit of tech.</p>
-          <p>I'm a proud contributor to open source projects like <em>Pandas</em> and <em>SciPy</em>. It's always exciting to give back to the community that's taught me so much.</p>
-          <p>When I'm not wrangling data or optimizing workflows, I enjoy capturing the beauty of the world through my camera lens 📷—from sweeping landscapes to candid human moments.</p>
-        </div>
-        <div class="k-about-links">
-          <a href="https://www.linkedin.com/in/shirvanian/" target="_blank" rel="noopener" class="k-link">linkedin →</a>
-          <a href="https://github.com/eshirvana/" target="_blank" rel="noopener" class="k-link">github →</a>
-          <a href="https://www.instagram.com/eshirvana/" target="_blank" rel="noopener" class="k-link">instagram →</a>
-        </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">01</span>
+      <span class="b-skill-cat">Languages</span>
+      <span class="b-skill-items">Python · SQL · Scala · Rust · Bash</span>
+    </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">02</span>
+      <span class="b-skill-cat">Distributed Systems</span>
+      <span class="b-skill-items">Apache Spark · Kafka · Schema Registry</span>
+    </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">03</span>
+      <span class="b-skill-cat">Cloud</span>
+      <span class="b-skill-items">Azure · Google Cloud · AWS</span>
+    </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">04</span>
+      <span class="b-skill-cat">Data Processing</span>
+      <span class="b-skill-items">Pandas · Dask · Polars · dbt · SSIS · Mode</span>
+    </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">05</span>
+      <span class="b-skill-cat">Databases</span>
+      <span class="b-skill-items">PostgreSQL · Clickhouse · Trino · SQL Server · MongoDB · Cassandra</span>
+    </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">06</span>
+      <span class="b-skill-cat">Data Warehouses</span>
+      <span class="b-skill-items">Snowflake · BigQuery · Delta Lake · Apache Parquet · Avro</span>
+    </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">07</span>
+      <span class="b-skill-cat">Visualization</span>
+      <span class="b-skill-items">Apache Superset · Power BI · Matplotlib</span>
+    </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">08</span>
+      <span class="b-skill-cat">Orchestration</span>
+      <span class="b-skill-items">Airflow · Dagster · Databricks · Microsoft Fabric · cron</span>
+    </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">09</span>
+      <span class="b-skill-cat">Infrastructure</span>
+      <span class="b-skill-items">Docker · Kubernetes · Nomad · GitHub Actions · Jenkins · Azure DevOps</span>
+    </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">10</span>
+      <span class="b-skill-cat">IaC</span>
+      <span class="b-skill-items">Terraform · Databricks Asset Bundles · Bicep</span>
+    </div>
+    <div class="b-skill-row">
+      <span class="b-skill-num">11</span>
+      <span class="b-skill-cat">AI Dev Tools</span>
+      <span class="b-skill-items">GitHub Copilot · Qodo · CodeRabbit</span>
+    </div>
+  </div>
+
+  <!-- ── TICKER CARD ─────────────────────────────────────── -->
+  <div class="b-card b-card--ticker" aria-hidden="true">
+    <div class="b-ticker">
+      <div class="b-ticker-track">
+        <span class="b-ti">PYTHON</span><span class="b-td">·</span>
+        <span class="b-ti">RUST</span><span class="b-td">·</span>
+        <span class="b-ti">SQL</span><span class="b-td">·</span>
+        <span class="b-ti">APACHE SPARK</span><span class="b-td">·</span>
+        <span class="b-ti">KAFKA</span><span class="b-td">·</span>
+        <span class="b-ti">SNOWFLAKE</span><span class="b-td">·</span>
+        <span class="b-ti">BIGQUERY</span><span class="b-td">·</span>
+        <span class="b-ti">KUBERNETES</span><span class="b-td">·</span>
+        <span class="b-ti">AIRFLOW</span><span class="b-td">·</span>
+        <span class="b-ti">DAGSTER</span><span class="b-td">·</span>
+        <span class="b-ti">DASK</span><span class="b-td">·</span>
+        <span class="b-ti">POLARS</span><span class="b-td">·</span>
+        <span class="b-ti">DBT</span><span class="b-td">·</span>
+        <span class="b-ti">DOCKER</span><span class="b-td">·</span>
+        <span class="b-ti">PANDAS</span><span class="b-td">·</span>
+        <span class="b-ti">POSTGRESQL</span><span class="b-td">·</span>
+        <span class="b-ti">CLICKHOUSE</span><span class="b-td">·</span>
+        <span class="b-ti">DELTA LAKE</span><span class="b-td">·</span>
+        <span class="b-ti">DATABRICKS</span><span class="b-td">·</span>
+        <span class="b-ti">GITHUB ACTIONS</span><span class="b-td">·</span>
+        <span class="b-ti">AWS</span><span class="b-td">·</span>
+        <span class="b-ti">GCP</span><span class="b-td">·</span>
+        <span class="b-ti">POWER BI</span><span class="b-td">·</span>
+        <span class="b-ti">SUPERSET</span><span class="b-td">·</span>
+        <!-- duplicate for seamless loop -->
+        <span class="b-ti">PYTHON</span><span class="b-td">·</span>
+        <span class="b-ti">RUST</span><span class="b-td">·</span>
+        <span class="b-ti">SQL</span><span class="b-td">·</span>
+        <span class="b-ti">APACHE SPARK</span><span class="b-td">·</span>
+        <span class="b-ti">KAFKA</span><span class="b-td">·</span>
+        <span class="b-ti">SNOWFLAKE</span><span class="b-td">·</span>
+        <span class="b-ti">BIGQUERY</span><span class="b-td">·</span>
+        <span class="b-ti">KUBERNETES</span><span class="b-td">·</span>
+        <span class="b-ti">AIRFLOW</span><span class="b-td">·</span>
+        <span class="b-ti">DAGSTER</span><span class="b-td">·</span>
+        <span class="b-ti">DASK</span><span class="b-td">·</span>
+        <span class="b-ti">POLARS</span><span class="b-td">·</span>
+        <span class="b-ti">DBT</span><span class="b-td">·</span>
+        <span class="b-ti">DOCKER</span><span class="b-td">·</span>
+        <span class="b-ti">PANDAS</span><span class="b-td">·</span>
+        <span class="b-ti">POSTGRESQL</span><span class="b-td">·</span>
+        <span class="b-ti">CLICKHOUSE</span><span class="b-td">·</span>
+        <span class="b-ti">DELTA LAKE</span><span class="b-td">·</span>
+        <span class="b-ti">DATABRICKS</span><span class="b-td">·</span>
+        <span class="b-ti">GITHUB ACTIONS</span><span class="b-td">·</span>
+        <span class="b-ti">AWS</span><span class="b-td">·</span>
+        <span class="b-ti">GCP</span><span class="b-td">·</span>
+        <span class="b-ti">POWER BI</span><span class="b-td">·</span>
+        <span class="b-ti">SUPERSET</span><span class="b-td">·</span>
       </div>
-
-      <div class="k-stats">
-        <div class="k-stat k-reveal">
-          <div class="k-stat-top"><span class="k-stat-n" data-target="30">0</span><span class="k-stat-unit">+</span></div>
-          <span class="k-stat-l">technologies</span>
-        </div>
-        <div class="k-stat k-reveal">
-          <div class="k-stat-top"><span class="k-stat-n" data-target="2">0</span><span class="k-stat-unit">+</span></div>
-          <span class="k-stat-l">OSS projects</span>
-        </div>
-        <div class="k-stat k-reveal">
-          <div class="k-stat-top"><span class="k-stat-n k-inf">∞</span></div>
-          <span class="k-stat-l">places explored</span>
-        </div>
-        <div class="k-stat k-reveal">
-          <div class="k-stat-top"><span class="k-stat-n" data-target="1000">0</span><span class="k-stat-unit">+</span></div>
-          <span class="k-stat-l">photos taken</span>
-        </div>
-      </div>
-
     </div>
   </div>
-</section>
 
-<!-- ══════════════════════════════════ SKILLS ════ -->
-<section class="k-skills" id="k-skills">
-  <div class="k-container">
-    <p class="k-label">// 02 — skills</p>
-    <h2 class="k-heading">The Stack</h2>
-
-    <div class="k-skill-list">
-      <div class="k-sr k-reveal"><span class="k-sn">01</span><span class="k-sc">Languages</span><span class="k-si">Python · SQL · Scala · Rust · Bash</span></div>
-      <div class="k-sr k-reveal"><span class="k-sn">02</span><span class="k-sc">Distributed Systems</span><span class="k-si">Apache Spark · Kafka · Schema Registry</span></div>
-      <div class="k-sr k-reveal"><span class="k-sn">03</span><span class="k-sc">Cloud</span><span class="k-si">Azure · Google Cloud · AWS</span></div>
-      <div class="k-sr k-reveal"><span class="k-sn">04</span><span class="k-sc">Data Processing</span><span class="k-si">Pandas · Dask · Polars · dbt · SSIS · Mode</span></div>
-      <div class="k-sr k-reveal"><span class="k-sn">05</span><span class="k-sc">Databases</span><span class="k-si">PostgreSQL · Clickhouse · Trino · SQL Server · MongoDB · Cassandra</span></div>
-      <div class="k-sr k-reveal"><span class="k-sn">06</span><span class="k-sc">Data Warehouses</span><span class="k-si">Snowflake · BigQuery · Delta Lake · Apache Parquet · Avro</span></div>
-      <div class="k-sr k-reveal"><span class="k-sn">07</span><span class="k-sc">Visualization</span><span class="k-si">Apache Superset · Power BI · Matplotlib</span></div>
-      <div class="k-sr k-reveal"><span class="k-sn">08</span><span class="k-sc">Orchestration</span><span class="k-si">Airflow · Dagster · Databricks · Microsoft Fabric · cron</span></div>
-      <div class="k-sr k-reveal"><span class="k-sn">09</span><span class="k-sc">Infrastructure</span><span class="k-si">Docker · Kubernetes · Nomad · GitHub Actions · Jenkins · Concourse CI · Azure DevOps</span></div>
-      <div class="k-sr k-reveal"><span class="k-sn">10</span><span class="k-sc">Infrastructure as Code</span><span class="k-si">Terraform · Databricks Asset Bundles · Bicep</span></div>
-      <div class="k-sr k-reveal"><span class="k-sn">11</span><span class="k-sc">AI Dev Tools</span><span class="k-si">GitHub Copilot · Qodo · CodeRabbit</span></div>
+  <!-- ── CONTACT CARD ────────────────────────────────────── -->
+  <div class="b-card b-card--contact" id="b-contact">
+    <div class="b-card-header">
+      <p class="b-card-label">// 03 — connect</p>
+      <h2 class="b-card-title">Let's Connect</h2>
     </div>
+
+    <a href="mailto:ehsan.shirvanian@gmail.com" class="b-contact-row">
+      <span class="b-contact-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/>
+        </svg>
+      </span>
+      <span class="b-contact-name">Email</span>
+      <span class="b-contact-val">ehsan.shirvanian@gmail.com</span>
+      <span class="b-contact-arr">↗</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/shirvanian/" target="_blank" rel="noopener" class="b-contact-row">
+      <span class="b-contact-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+        </svg>
+      </span>
+      <span class="b-contact-name">LinkedIn</span>
+      <span class="b-contact-val">in/shirvanian</span>
+      <span class="b-contact-arr">↗</span>
+    </a>
+
+    <a href="https://github.com/eshirvana/" target="_blank" rel="noopener" class="b-contact-row">
+      <span class="b-contact-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+      </span>
+      <span class="b-contact-name">GitHub</span>
+      <span class="b-contact-val">eshirvana</span>
+      <span class="b-contact-arr">↗</span>
+    </a>
+
+    <a href="https://stackoverflow.com/u/1367454/" target="_blank" rel="noopener" class="b-contact-row">
+      <span class="b-contact-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852 10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056 9.705 4.53.903-1.95-9.706-4.53-.902 1.95zm2.715-4.785 8.217 6.855 1.359-1.62-8.216-6.853-1.36 1.618zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.751 0z"/>
+        </svg>
+      </span>
+      <span class="b-contact-name">Stack Overflow</span>
+      <span class="b-contact-val">eshirvana</span>
+      <span class="b-contact-arr">↗</span>
+    </a>
+
+    <a href="https://instagram.com/eshirvana/" target="_blank" rel="noopener" class="b-contact-row">
+      <span class="b-contact-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      </span>
+      <span class="b-contact-name">Instagram</span>
+      <span class="b-contact-val">eshirvana</span>
+      <span class="b-contact-arr">↗</span>
+    </a>
+
+    <a href="https://www.flickr.com/photos/shirvana/" target="_blank" rel="noopener" class="b-contact-row">
+      <span class="b-contact-icon">
+        <svg width="16" height="16" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="6" cy="11" r="5.5"/><circle cx="16" cy="11" r="5.5"/>
+        </svg>
+      </span>
+      <span class="b-contact-name">Flickr</span>
+      <span class="b-contact-val">shirvana</span>
+      <span class="b-contact-arr">↗</span>
+    </a>
+
   </div>
-</section>
+</div><!-- /b-bento -->
 
-<!-- ══════════════════════════════════ CONTACT ═══ -->
-<section class="k-contact" id="k-contact">
-  <div class="k-container">
-    <p class="k-label">// 03 — connect</p>
-    <h2 class="k-heading">Let's Connect</h2>
-
-    <div class="k-cl-list">
-
-      <a href="mailto:ehsan.shirvanian@gmail.com" class="k-cl k-reveal">
-        <span class="k-cl-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/>
-          </svg>
-        </span>
-        <span class="k-cl-name">Email</span>
-        <span class="k-cl-val">ehsan.shirvanian@gmail.com</span>
-        <span class="k-cl-arr">↗</span>
-      </a>
-
-      <a href="https://www.linkedin.com/in/shirvanian/" target="_blank" rel="noopener" class="k-cl k-reveal">
-        <span class="k-cl-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
-          </svg>
-        </span>
-        <span class="k-cl-name">LinkedIn</span>
-        <span class="k-cl-val">in/shirvanian</span>
-        <span class="k-cl-arr">↗</span>
-      </a>
-
-      <a href="https://github.com/eshirvana/" target="_blank" rel="noopener" class="k-cl k-reveal">
-        <span class="k-cl-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
-          </svg>
-        </span>
-        <span class="k-cl-name">GitHub</span>
-        <span class="k-cl-val">eshirvana</span>
-        <span class="k-cl-arr">↗</span>
-      </a>
-
-      <a href="https://stackoverflow.com/u/1367454/" target="_blank" rel="noopener" class="k-cl k-reveal">
-        <span class="k-cl-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852 10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056 9.705 4.53.903-1.95-9.706-4.53-.902 1.95zm2.715-4.785 8.217 6.855 1.359-1.62-8.216-6.853-1.36 1.618zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.751 0z"/>
-          </svg>
-        </span>
-        <span class="k-cl-name">Stack Overflow</span>
-        <span class="k-cl-val">eshirvana</span>
-        <span class="k-cl-arr">↗</span>
-      </a>
-
-      <a href="https://instagram.com/eshirvana/" target="_blank" rel="noopener" class="k-cl k-reveal">
-        <span class="k-cl-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-          </svg>
-        </span>
-        <span class="k-cl-name">Instagram</span>
-        <span class="k-cl-val">eshirvana</span>
-        <span class="k-cl-arr">↗</span>
-      </a>
-
-      <a href="https://www.flickr.com/photos/shirvana/" target="_blank" rel="noopener" class="k-cl k-reveal">
-        <span class="k-cl-icon">
-          <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-            <circle cx="6" cy="11" r="5.5"/><circle cx="16" cy="11" r="5.5"/>
-          </svg>
-        </span>
-        <span class="k-cl-name">Flickr</span>
-        <span class="k-cl-val">shirvana</span>
-        <span class="k-cl-arr">↗</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════ FOOTER ════ -->
-<footer class="k-footer">
-  <div class="k-container">
-    <div class="k-footer-inner">
-      <a href="#" class="k-footer-logo">ehsan<span class="k-logo-tld">.codes</span></a>
-      <div class="k-footer-q">
-        <p class="k-footer-q1">Built by a human who asked an AI to do it better</p>
-      </div>
-      <p class="k-footer-c">© 2026 Ehsan Shirvanian</p>
-    </div>
+<!-- ══════════════════════════════════ FOOTER ═══════════════ -->
+<footer class="b-footer">
+  <div class="b-footer-inner">
+    <a href="#" class="b-footer-logo">ehsan<span>.codes</span></a>
+    <p class="b-footer-text">Built by a human who asked an AI to do it better</p>
+    <p class="b-footer-text">© 2026 Ehsan Shirvanian</p>
   </div>
 </footer>
 
-<script src="/js/kinetic.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
