@@ -6,7 +6,7 @@
   <title>Ehsan Shirvanian — Data Engineer</title>
   <meta name="description" content="Data engineer, traveler, and photographer. Building scalable data pipelines and distributed systems.">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#141414">
+  <meta name="theme-color" content="#0b0d0e">
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/style.css">
   <script>
@@ -24,19 +24,21 @@
 <body>
 
 <!-- ══════════════════════════════════ NAV ══════════════════ -->
-<nav class="b-nav" id="b-nav">
-  <div class="b-nav-inner">
-    <a href="#" class="b-logo">ehsan<span class="b-logo-dot">.codes</span></a>
+<nav class="t-nav" id="t-nav">
+  <div class="t-nav-inner">
+    <div class="t-dots" aria-hidden="true"><span class="t-dot-r"></span><span class="t-dot-y"></span><span class="t-dot-g"></span></div>
 
-    <ul class="b-nav-links" id="b-nav-links">
-      <li><a href="#b-about"   class="b-nav-link">about</a></li>
-      <li><a href="#b-skills"  class="b-nav-link">skills</a></li>
-      <li><a href="#b-contact" class="b-nav-link">contact</a></li>
+    <a href="#top" class="t-logo">ehsan<span class="t-logo-at">@</span>portfolio<span class="t-caret" aria-hidden="true">_</span></a>
+
+    <ul class="t-nav-tabs" id="t-nav-tabs">
+      <li><a href="#about"   class="t-tab">about<span class="t-tab-ext t-ext-md">.md</span></a></li>
+      <li><a href="#skills"  class="t-tab">skills<span class="t-tab-ext t-ext-json">.json</span></a></li>
+      <li><a href="#contact" class="t-tab">contact<span class="t-tab-ext t-ext-sh">.sh</span></a></li>
     </ul>
 
-    <div class="b-nav-actions">
-      <button class="b-theme-btn" id="b-theme-btn" aria-label="Toggle light/dark theme">
-        <svg class="b-icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <div class="t-nav-actions">
+      <button class="t-icon-btn" id="t-theme-btn" aria-label="Toggle light/dark theme">
+        <svg class="t-icon-sun"  width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="4"/>
           <line x1="12" y1="2"  x2="12" y2="4"/>  <line x1="12" y1="20" x2="12" y2="22"/>
           <line x1="4.22" y1="4.22"   x2="5.64" y2="5.64"/>
@@ -45,279 +47,315 @@
           <line x1="4.22" y1="19.78"  x2="5.64" y2="18.36"/>
           <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
         </svg>
-        <svg class="b-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="t-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
         </svg>
       </button>
-      <button class="b-menu-btn" id="b-menu-btn" aria-label="Toggle navigation">
+      <button class="t-menu-btn" id="t-menu-btn" aria-label="Toggle navigation">
         <span></span><span></span>
       </button>
     </div>
   </div>
 </nav>
 
-<!-- ══════════════════════════════════ BENTO GRID ═══════════ -->
-<div class="b-bento">
+<main class="t-main" id="top">
 
-  <!-- ── INTRO CARD ─────────────────────────────────────── -->
-  <div class="b-card b-card--intro">
-    <div class="b-intro-eyebrow">
-      <span class="b-eyebrow-text">data engineer</span>
-      <span class="b-blinker" aria-hidden="true">█</span>
-    </div>
+  <!-- ══════════════════════════════ HERO / TERMINAL ═════════ -->
+  <section class="t-hero">
+    <div class="t-window t-window--hero t-reveal">
+      <div class="t-window-bar">
+        <div class="t-dots"><span class="t-dot-r"></span><span class="t-dot-y"></span><span class="t-dot-g"></span></div>
+        <span class="t-window-title">ehsan@portfolio — zsh</span>
+        <span class="t-window-meta">80×24</span>
+      </div>
+      <div class="t-window-body">
+        <div class="t-line">
+          <span class="t-prompt">➜&nbsp;&nbsp;~</span>
+          <span class="t-cmd t-type" data-text="whoami"></span>
+        </div>
+        <h1 class="t-output t-name">
+          <span class="t-scramble" data-text="EHSAN">EHSAN</span>
+          <span class="t-scramble t-hl" data-text="SHIRVANIAN">SHIRVANIAN</span>
+        </h1>
 
-    <h1 class="b-intro-title">
-      <span class="b-scramble" data-text="EHSAN">EHSAN</span><br>
-      <span class="b-scramble b-hl" data-text="SHIRVANIAN">SHIRVANIAN</span>
-    </h1>
+        <div class="t-line">
+          <span class="t-prompt">➜&nbsp;&nbsp;~</span>
+          <span class="t-cmd t-type" data-text="cat role.txt"></span>
+        </div>
+        <p class="t-output t-role">
+          <span class="t-type" data-text="data engineer · traveler · photographer"></span><span class="t-cursor" aria-hidden="true">█</span>
+        </p>
 
-    <p class="b-intro-sub">data engineer &nbsp;·&nbsp; traveler &nbsp;·&nbsp; photographer</p>
+        <div class="t-cta-row">
+          <a href="#about"                          class="t-btn t-btn--solid">[&nbsp;explore ↓&nbsp;]</a>
+          <a href="mailto:ehsan.shirvanian@gmail.com" class="t-btn t-btn--ghost">[&nbsp;get in touch ↗&nbsp;]</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="b-intro-cta">
-      <a href="#b-about"                          class="b-btn-primary">explore ↓</a>
-      <a href="mailto:ehsan.shirvanian@gmail.com" class="b-btn-ghost">get in touch ↗</a>
+  <!-- ══════════════════════════════ ABOUT.MD ═════════════════ -->
+  <section class="t-panel t-reveal" id="about">
+    <div class="t-panel-bar">
+      <span class="t-file-dot t-ext-md" aria-hidden="true"></span>
+      <span class="t-panel-name">about.md</span>
+      <span class="t-panel-tag">01</span>
     </div>
-  </div>
+    <div class="t-panel-body">
+      <ol class="t-lines">
+        <li><span class="t-gutter">1</span><span class="t-comment"># About</span></li>
+        <li><span class="t-gutter">2</span><span class="t-blank">&nbsp;</span></li>
+        <li><span class="t-gutter">3</span><span class="t-prose">I'm Ehsan, a data enthusiast who loves diving deep into the world of bytes, pipelines, and distributed systems. Think of me as a kid in a candy store — except the candy is tech.</span></li>
+        <li><span class="t-gutter">4</span><span class="t-blank">&nbsp;</span></li>
+        <li><span class="t-gutter">5</span><span class="t-prose">Proud contributor to open source projects like <em>Pandas</em> and <em>SciPy</em> — giving back to the community that has taught me so much.</span></li>
+        <li><span class="t-gutter">6</span><span class="t-blank">&nbsp;</span></li>
+        <li><span class="t-gutter">7</span><span class="t-prose">When not wrangling data, I'm out capturing the world through my camera lens — from sweeping landscapes to candid human moments.</span></li>
+      </ol>
+    </div>
+    <div class="t-panel-footer">
+      <span class="t-footer-kw">export</span>
+      <a href="https://www.linkedin.com/in/shirvanian/" target="_blank" rel="noopener" class="t-inline-link">linkedin</a><span class="t-punc">,</span>
+      <a href="https://github.com/eshirvana/"           target="_blank" rel="noopener" class="t-inline-link">github</a><span class="t-punc">,</span>
+      <a href="https://www.instagram.com/eshirvana/"    target="_blank" rel="noopener" class="t-inline-link">instagram</a>
+    </div>
+  </section>
 
-  <!-- ── STATS CARD ─────────────────────────────────────── -->
-  <div class="b-card b-card--stats">
-    <div class="b-stat-cell">
-      <div class="b-stat-num"><span data-target="30">0</span>+</div>
-      <div class="b-stat-lbl">technologies</div>
+  <!-- ══════════════════════════════ SKILLS.JSON ══════════════ -->
+  <section class="t-panel t-reveal" id="skills">
+    <div class="t-panel-bar">
+      <span class="t-file-dot t-ext-json" aria-hidden="true"></span>
+      <span class="t-panel-name">skills.json</span>
+      <span class="t-panel-tag">02</span>
     </div>
-    <div class="b-stat-cell">
-      <div class="b-stat-num"><span data-target="2">0</span>+</div>
-      <div class="b-stat-lbl">OSS projects</div>
-    </div>
-    <div class="b-stat-cell">
-      <div class="b-stat-num">∞</div>
-      <div class="b-stat-lbl">places explored</div>
-    </div>
-    <div class="b-stat-cell">
-      <div class="b-stat-num"><span data-target="1000">0</span>+</div>
-      <div class="b-stat-lbl">photos taken</div>
-    </div>
-  </div>
+    <div class="t-panel-body t-json">
+      <div class="t-json-brace">{</div>
 
-  <!-- ── BIO CARD ───────────────────────────────────────── -->
-  <div class="b-card b-card--bio" id="b-about">
-    <p class="b-card-label">// 01 — about</p>
-    <p class="b-bio-text">I'm Ehsan, a data enthusiast who loves diving deep into the world of bytes, pipelines, and distributed systems. Think of me as a kid in a candy store — except the candy is tech.</p>
-    <p class="b-bio-text">Proud contributor to open source projects like <em>Pandas</em> and <em>SciPy</em> — giving back to the community that has taught me so much.</p>
-    <p class="b-bio-text">When not wrangling data, I'm out capturing the world through my camera lens — from sweeping landscapes to candid human moments.</p>
-    <div class="b-bio-links">
-      <a href="https://www.linkedin.com/in/shirvanian/" target="_blank" rel="noopener" class="b-link">linkedin ↗</a>
-      <a href="https://github.com/eshirvana/"           target="_blank" rel="noopener" class="b-link">github ↗</a>
-      <a href="https://www.instagram.com/eshirvana/"    target="_blank" rel="noopener" class="b-link">instagram ↗</a>
-    </div>
-  </div>
+      <div class="t-json-row"><span class="t-gutter">01</span>
+        <span class="t-json-key">"languages"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"Python"</span>, <span class="t-str">"SQL"</span>, <span class="t-str">"Scala"</span>, <span class="t-str">"Rust"</span>, <span class="t-str">"Bash"</span>
+        </span><span class="t-json-op">,</span>
+      </div>
 
-  <!-- ── SKILLS CARD ────────────────────────────────────── -->
-  <div class="b-card b-card--skills" id="b-skills">
-    <div class="b-card-header">
-      <p class="b-card-label">// 02 — skills</p>
-      <h2 class="b-card-title">The Stack</h2>
-    </div>
+      <div class="t-json-row"><span class="t-gutter">02</span>
+        <span class="t-json-key">"distributed_systems"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"Apache Spark"</span>, <span class="t-str">"Kafka"</span>, <span class="t-str">"Schema Registry"</span>
+        </span><span class="t-json-op">,</span>
+      </div>
 
-    <div class="b-skill-row">
-      <span class="b-skill-num">01</span>
-      <span class="b-skill-cat">Languages</span>
-      <span class="b-skill-items">Python · SQL · Scala · Rust · Bash</span>
-    </div>
-    <div class="b-skill-row">
-      <span class="b-skill-num">02</span>
-      <span class="b-skill-cat">Distributed Systems</span>
-      <span class="b-skill-items">Apache Spark · Kafka · Schema Registry</span>
-    </div>
-    <div class="b-skill-row">
-      <span class="b-skill-num">03</span>
-      <span class="b-skill-cat">Cloud</span>
-      <span class="b-skill-items">Azure · Google Cloud · AWS</span>
-    </div>
-    <div class="b-skill-row">
-      <span class="b-skill-num">04</span>
-      <span class="b-skill-cat">Data Processing</span>
-      <span class="b-skill-items">Pandas · Dask · Polars · dbt · SSIS · Mode</span>
-    </div>
-    <div class="b-skill-row">
-      <span class="b-skill-num">05</span>
-      <span class="b-skill-cat">Databases</span>
-      <span class="b-skill-items">PostgreSQL · Clickhouse · Trino · SQL Server · MongoDB · Cassandra</span>
-    </div>
-    <div class="b-skill-row">
-      <span class="b-skill-num">06</span>
-      <span class="b-skill-cat">Data Warehouses</span>
-      <span class="b-skill-items">Snowflake · BigQuery · Delta Lake · Apache Parquet · Avro</span>
-    </div>
-    <div class="b-skill-row">
-      <span class="b-skill-num">07</span>
-      <span class="b-skill-cat">Visualization</span>
-      <span class="b-skill-items">Apache Superset · Power BI · Matplotlib</span>
-    </div>
-    <div class="b-skill-row">
-      <span class="b-skill-num">08</span>
-      <span class="b-skill-cat">Orchestration</span>
-      <span class="b-skill-items">Airflow · Dagster · Databricks · Microsoft Fabric · cron</span>
-    </div>
-    <div class="b-skill-row">
-      <span class="b-skill-num">09</span>
-      <span class="b-skill-cat">Infrastructure</span>
-      <span class="b-skill-items">Docker · Kubernetes · Nomad · GitHub Actions · Jenkins · Azure DevOps</span>
-    </div>
-    <div class="b-skill-row">
-      <span class="b-skill-num">10</span>
-      <span class="b-skill-cat">IaC</span>
-      <span class="b-skill-items">Terraform · Databricks Asset Bundles · Bicep</span>
-    </div>
-    <div class="b-skill-row">
-      <span class="b-skill-num">11</span>
-      <span class="b-skill-cat">AI Dev Tools</span>
-      <span class="b-skill-items">GitHub Copilot · Qodo · CodeRabbit</span>
-    </div>
-  </div>
+      <div class="t-json-row"><span class="t-gutter">03</span>
+        <span class="t-json-key">"cloud"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"Azure"</span>, <span class="t-str">"Google Cloud"</span>, <span class="t-str">"AWS"</span>
+        </span><span class="t-json-op">,</span>
+      </div>
 
-  <!-- ── TICKER CARD ─────────────────────────────────────── -->
-  <div class="b-card b-card--ticker" aria-hidden="true">
-    <div class="b-ticker">
-      <div class="b-ticker-track">
-        <span class="b-ti">PYTHON</span><span class="b-td">·</span>
-        <span class="b-ti">RUST</span><span class="b-td">·</span>
-        <span class="b-ti">SQL</span><span class="b-td">·</span>
-        <span class="b-ti">APACHE SPARK</span><span class="b-td">·</span>
-        <span class="b-ti">KAFKA</span><span class="b-td">·</span>
-        <span class="b-ti">SNOWFLAKE</span><span class="b-td">·</span>
-        <span class="b-ti">BIGQUERY</span><span class="b-td">·</span>
-        <span class="b-ti">KUBERNETES</span><span class="b-td">·</span>
-        <span class="b-ti">AIRFLOW</span><span class="b-td">·</span>
-        <span class="b-ti">DAGSTER</span><span class="b-td">·</span>
-        <span class="b-ti">DASK</span><span class="b-td">·</span>
-        <span class="b-ti">POLARS</span><span class="b-td">·</span>
-        <span class="b-ti">DBT</span><span class="b-td">·</span>
-        <span class="b-ti">DOCKER</span><span class="b-td">·</span>
-        <span class="b-ti">PANDAS</span><span class="b-td">·</span>
-        <span class="b-ti">POSTGRESQL</span><span class="b-td">·</span>
-        <span class="b-ti">CLICKHOUSE</span><span class="b-td">·</span>
-        <span class="b-ti">DELTA LAKE</span><span class="b-td">·</span>
-        <span class="b-ti">DATABRICKS</span><span class="b-td">·</span>
-        <span class="b-ti">GITHUB ACTIONS</span><span class="b-td">·</span>
-        <span class="b-ti">AWS</span><span class="b-td">·</span>
-        <span class="b-ti">GCP</span><span class="b-td">·</span>
-        <span class="b-ti">POWER BI</span><span class="b-td">·</span>
-        <span class="b-ti">SUPERSET</span><span class="b-td">·</span>
+      <div class="t-json-row"><span class="t-gutter">04</span>
+        <span class="t-json-key">"data_processing"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"Pandas"</span>, <span class="t-str">"Dask"</span>, <span class="t-str">"Polars"</span>, <span class="t-str">"dbt"</span>, <span class="t-str">"SSIS"</span>, <span class="t-str">"Mode"</span>
+        </span><span class="t-json-op">,</span>
+      </div>
+
+      <div class="t-json-row"><span class="t-gutter">05</span>
+        <span class="t-json-key">"databases"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"PostgreSQL"</span>, <span class="t-str">"Clickhouse"</span>, <span class="t-str">"Trino"</span>, <span class="t-str">"SQL Server"</span>, <span class="t-str">"MongoDB"</span>, <span class="t-str">"Cassandra"</span>
+        </span><span class="t-json-op">,</span>
+      </div>
+
+      <div class="t-json-row"><span class="t-gutter">06</span>
+        <span class="t-json-key">"data_warehouses"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"Snowflake"</span>, <span class="t-str">"BigQuery"</span>, <span class="t-str">"Delta Lake"</span>, <span class="t-str">"Apache Parquet"</span>, <span class="t-str">"Avro"</span>
+        </span><span class="t-json-op">,</span>
+      </div>
+
+      <div class="t-json-row"><span class="t-gutter">07</span>
+        <span class="t-json-key">"visualization"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"Apache Superset"</span>, <span class="t-str">"Power BI"</span>, <span class="t-str">"Matplotlib"</span>
+        </span><span class="t-json-op">,</span>
+      </div>
+
+      <div class="t-json-row"><span class="t-gutter">08</span>
+        <span class="t-json-key">"orchestration"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"Airflow"</span>, <span class="t-str">"Dagster"</span>, <span class="t-str">"Databricks"</span>, <span class="t-str">"Microsoft Fabric"</span>, <span class="t-str">"cron"</span>
+        </span><span class="t-json-op">,</span>
+      </div>
+
+      <div class="t-json-row"><span class="t-gutter">09</span>
+        <span class="t-json-key">"infrastructure"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"Docker"</span>, <span class="t-str">"Kubernetes"</span>, <span class="t-str">"Nomad"</span>, <span class="t-str">"GitHub Actions"</span>, <span class="t-str">"Jenkins"</span>, <span class="t-str">"Azure DevOps"</span>
+        </span><span class="t-json-op">,</span>
+      </div>
+
+      <div class="t-json-row"><span class="t-gutter">10</span>
+        <span class="t-json-key">"iac"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"Terraform"</span>, <span class="t-str">"Databricks Asset Bundles"</span>, <span class="t-str">"Bicep"</span>
+        </span><span class="t-json-op">,</span>
+      </div>
+
+      <div class="t-json-row"><span class="t-gutter">11</span>
+        <span class="t-json-key">"ai_dev_tools"</span><span class="t-json-op">:</span><span class="t-json-vals">
+          <span class="t-str">"GitHub Copilot"</span>, <span class="t-str">"Qodo"</span>, <span class="t-str">"CodeRabbit"</span>
+        </span>
+      </div>
+
+      <div class="t-json-brace">}</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ TICKER ═══════════════════ -->
+  <div class="t-ticker-wrap t-reveal" aria-hidden="true">
+    <div class="t-ticker">
+      <div class="t-ticker-track">
+        <span class="t-ti">PYTHON</span><span class="t-td">·</span>
+        <span class="t-ti">RUST</span><span class="t-td">·</span>
+        <span class="t-ti">SQL</span><span class="t-td">·</span>
+        <span class="t-ti">APACHE SPARK</span><span class="t-td">·</span>
+        <span class="t-ti">KAFKA</span><span class="t-td">·</span>
+        <span class="t-ti">SNOWFLAKE</span><span class="t-td">·</span>
+        <span class="t-ti">BIGQUERY</span><span class="t-td">·</span>
+        <span class="t-ti">KUBERNETES</span><span class="t-td">·</span>
+        <span class="t-ti">AIRFLOW</span><span class="t-td">·</span>
+        <span class="t-ti">DAGSTER</span><span class="t-td">·</span>
+        <span class="t-ti">DASK</span><span class="t-td">·</span>
+        <span class="t-ti">POLARS</span><span class="t-td">·</span>
+        <span class="t-ti">DBT</span><span class="t-td">·</span>
+        <span class="t-ti">DOCKER</span><span class="t-td">·</span>
+        <span class="t-ti">PANDAS</span><span class="t-td">·</span>
+        <span class="t-ti">POSTGRESQL</span><span class="t-td">·</span>
+        <span class="t-ti">CLICKHOUSE</span><span class="t-td">·</span>
+        <span class="t-ti">DELTA LAKE</span><span class="t-td">·</span>
+        <span class="t-ti">DATABRICKS</span><span class="t-td">·</span>
+        <span class="t-ti">GITHUB ACTIONS</span><span class="t-td">·</span>
+        <span class="t-ti">AWS</span><span class="t-td">·</span>
+        <span class="t-ti">GCP</span><span class="t-td">·</span>
+        <span class="t-ti">POWER BI</span><span class="t-td">·</span>
+        <span class="t-ti">SUPERSET</span><span class="t-td">·</span>
         <!-- duplicate for seamless loop -->
-        <span class="b-ti">PYTHON</span><span class="b-td">·</span>
-        <span class="b-ti">RUST</span><span class="b-td">·</span>
-        <span class="b-ti">SQL</span><span class="b-td">·</span>
-        <span class="b-ti">APACHE SPARK</span><span class="b-td">·</span>
-        <span class="b-ti">KAFKA</span><span class="b-td">·</span>
-        <span class="b-ti">SNOWFLAKE</span><span class="b-td">·</span>
-        <span class="b-ti">BIGQUERY</span><span class="b-td">·</span>
-        <span class="b-ti">KUBERNETES</span><span class="b-td">·</span>
-        <span class="b-ti">AIRFLOW</span><span class="b-td">·</span>
-        <span class="b-ti">DAGSTER</span><span class="b-td">·</span>
-        <span class="b-ti">DASK</span><span class="b-td">·</span>
-        <span class="b-ti">POLARS</span><span class="b-td">·</span>
-        <span class="b-ti">DBT</span><span class="b-td">·</span>
-        <span class="b-ti">DOCKER</span><span class="b-td">·</span>
-        <span class="b-ti">PANDAS</span><span class="b-td">·</span>
-        <span class="b-ti">POSTGRESQL</span><span class="b-td">·</span>
-        <span class="b-ti">CLICKHOUSE</span><span class="b-td">·</span>
-        <span class="b-ti">DELTA LAKE</span><span class="b-td">·</span>
-        <span class="b-ti">DATABRICKS</span><span class="b-td">·</span>
-        <span class="b-ti">GITHUB ACTIONS</span><span class="b-td">·</span>
-        <span class="b-ti">AWS</span><span class="b-td">·</span>
-        <span class="b-ti">GCP</span><span class="b-td">·</span>
-        <span class="b-ti">POWER BI</span><span class="b-td">·</span>
-        <span class="b-ti">SUPERSET</span><span class="b-td">·</span>
+        <span class="t-ti">PYTHON</span><span class="t-td">·</span>
+        <span class="t-ti">RUST</span><span class="t-td">·</span>
+        <span class="t-ti">SQL</span><span class="t-td">·</span>
+        <span class="t-ti">APACHE SPARK</span><span class="t-td">·</span>
+        <span class="t-ti">KAFKA</span><span class="t-td">·</span>
+        <span class="t-ti">SNOWFLAKE</span><span class="t-td">·</span>
+        <span class="t-ti">BIGQUERY</span><span class="t-td">·</span>
+        <span class="t-ti">KUBERNETES</span><span class="t-td">·</span>
+        <span class="t-ti">AIRFLOW</span><span class="t-td">·</span>
+        <span class="t-ti">DAGSTER</span><span class="t-td">·</span>
+        <span class="t-ti">DASK</span><span class="t-td">·</span>
+        <span class="t-ti">POLARS</span><span class="t-td">·</span>
+        <span class="t-ti">DBT</span><span class="t-td">·</span>
+        <span class="t-ti">DOCKER</span><span class="t-td">·</span>
+        <span class="t-ti">PANDAS</span><span class="t-td">·</span>
+        <span class="t-ti">POSTGRESQL</span><span class="t-td">·</span>
+        <span class="t-ti">CLICKHOUSE</span><span class="t-td">·</span>
+        <span class="t-ti">DELTA LAKE</span><span class="t-td">·</span>
+        <span class="t-ti">DATABRICKS</span><span class="t-td">·</span>
+        <span class="t-ti">GITHUB ACTIONS</span><span class="t-td">·</span>
+        <span class="t-ti">AWS</span><span class="t-td">·</span>
+        <span class="t-ti">GCP</span><span class="t-td">·</span>
+        <span class="t-ti">POWER BI</span><span class="t-td">·</span>
+        <span class="t-ti">SUPERSET</span><span class="t-td">·</span>
       </div>
     </div>
   </div>
 
-  <!-- ── CONTACT CARD ────────────────────────────────────── -->
-  <div class="b-card b-card--contact" id="b-contact">
-    <div class="b-card-header">
-      <p class="b-card-label">// 03 — connect</p>
-      <h2 class="b-card-title">Let's Connect</h2>
+  <!-- ══════════════════════════════ CONTACT.SH ═══════════════ -->
+  <section class="t-panel t-reveal" id="contact">
+    <div class="t-panel-bar">
+      <span class="t-file-dot t-ext-sh" aria-hidden="true"></span>
+      <span class="t-panel-name">contact.sh</span>
+      <span class="t-panel-tag">03</span>
     </div>
+    <div class="t-panel-body t-env">
 
-    <a href="mailto:ehsan.shirvanian@gmail.com" class="b-contact-row">
-      <span class="b-contact-icon">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/>
-        </svg>
+      <a href="mailto:ehsan.shirvanian@gmail.com" class="t-env-row">
+        <span class="t-gutter">1</span>
+        <span class="t-env-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/>
+          </svg>
+        </span>
+        <span class="t-env-kw">export</span> <span class="t-env-key">EMAIL</span><span class="t-json-op">=</span><span class="t-str">"ehsan.shirvanian@gmail.com"</span>
+        <span class="t-env-arr">↗</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/shirvanian/" target="_blank" rel="noopener" class="t-env-row">
+        <span class="t-gutter">2</span>
+        <span class="t-env-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+          </svg>
+        </span>
+        <span class="t-env-kw">export</span> <span class="t-env-key">LINKEDIN</span><span class="t-json-op">=</span><span class="t-str">"in/shirvanian"</span>
+        <span class="t-env-arr">↗</span>
+      </a>
+
+      <a href="https://github.com/eshirvana/" target="_blank" rel="noopener" class="t-env-row">
+        <span class="t-gutter">3</span>
+        <span class="t-env-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </span>
+        <span class="t-env-kw">export</span> <span class="t-env-key">GITHUB</span><span class="t-json-op">=</span><span class="t-str">"eshirvana"</span>
+        <span class="t-env-arr">↗</span>
+      </a>
+
+      <a href="https://stackoverflow.com/u/1367454/" target="_blank" rel="noopener" class="t-env-row">
+        <span class="t-gutter">4</span>
+        <span class="t-env-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852 10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056 9.705 4.53.903-1.95-9.706-4.53-.902 1.95zm2.715-4.785 8.217 6.855 1.359-1.62-8.216-6.853-1.36 1.618zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.751 0z"/>
+          </svg>
+        </span>
+        <span class="t-env-kw">export</span> <span class="t-env-key">STACKOVERFLOW</span><span class="t-json-op">=</span><span class="t-str">"eshirvana"</span>
+        <span class="t-env-arr">↗</span>
+      </a>
+
+      <a href="https://instagram.com/eshirvana/" target="_blank" rel="noopener" class="t-env-row">
+        <span class="t-gutter">5</span>
+        <span class="t-env-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </span>
+        <span class="t-env-kw">export</span> <span class="t-env-key">INSTAGRAM</span><span class="t-json-op">=</span><span class="t-str">"eshirvana"</span>
+        <span class="t-env-arr">↗</span>
+      </a>
+
+      <a href="https://www.flickr.com/photos/shirvana/" target="_blank" rel="noopener" class="t-env-row">
+        <span class="t-gutter">6</span>
+        <span class="t-env-icon">
+          <svg width="15" height="15" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <circle cx="6" cy="11" r="5.5"/><circle cx="16" cy="11" r="5.5"/>
+          </svg>
+        </span>
+        <span class="t-env-kw">export</span> <span class="t-env-key">FLICKR</span><span class="t-json-op">=</span><span class="t-str">"shirvana"</span>
+        <span class="t-env-arr">↗</span>
+      </a>
+
+    </div>
+  </section>
+
+</main><!-- /t-main -->
+
+<!-- ══════════════════════════════════ STATUS BAR ════════════ -->
+<footer class="t-statusbar">
+  <div class="t-statusbar-inner">
+    <div class="t-status-group">
+      <span class="t-status-item t-status-branch">
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M11.75 2.5a1.75 1.75 0 1 0-2.61 1.52v.66a3.5 3.5 0 0 1-3.5 3.5h-1a3.48 3.48 0 0 0-1.64.41V4.86a1.75 1.75 0 1 0-1.5 0v6.28a1.75 1.75 0 1 0 1.5 0v-.36a1.98 1.98 0 0 1 1.64-.86h1a5 5 0 0 0 5-5v-.66a1.75 1.75 0 0 0 1.11-1.7z"/></svg>
+        main
       </span>
-      <span class="b-contact-name">Email</span>
-      <span class="b-contact-val">ehsan.shirvanian@gmail.com</span>
-      <span class="b-contact-arr">↗</span>
-    </a>
-
-    <a href="https://www.linkedin.com/in/shirvanian/" target="_blank" rel="noopener" class="b-contact-row">
-      <span class="b-contact-icon">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
-          <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
-        </svg>
-      </span>
-      <span class="b-contact-name">LinkedIn</span>
-      <span class="b-contact-val">in/shirvanian</span>
-      <span class="b-contact-arr">↗</span>
-    </a>
-
-    <a href="https://github.com/eshirvana/" target="_blank" rel="noopener" class="b-contact-row">
-      <span class="b-contact-icon">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
-        </svg>
-      </span>
-      <span class="b-contact-name">GitHub</span>
-      <span class="b-contact-val">eshirvana</span>
-      <span class="b-contact-arr">↗</span>
-    </a>
-
-    <a href="https://stackoverflow.com/u/1367454/" target="_blank" rel="noopener" class="b-contact-row">
-      <span class="b-contact-icon">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852 10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056 9.705 4.53.903-1.95-9.706-4.53-.902 1.95zm2.715-4.785 8.217 6.855 1.359-1.62-8.216-6.853-1.36 1.618zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.751 0z"/>
-        </svg>
-      </span>
-      <span class="b-contact-name">Stack Overflow</span>
-      <span class="b-contact-val">eshirvana</span>
-      <span class="b-contact-arr">↗</span>
-    </a>
-
-    <a href="https://instagram.com/eshirvana/" target="_blank" rel="noopener" class="b-contact-row">
-      <span class="b-contact-icon">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="5"/>
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-        </svg>
-      </span>
-      <span class="b-contact-name">Instagram</span>
-      <span class="b-contact-val">eshirvana</span>
-      <span class="b-contact-arr">↗</span>
-    </a>
-
-    <a href="https://www.flickr.com/photos/shirvana/" target="_blank" rel="noopener" class="b-contact-row">
-      <span class="b-contact-icon">
-        <svg width="16" height="16" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-          <circle cx="6" cy="11" r="5.5"/><circle cx="16" cy="11" r="5.5"/>
-        </svg>
-      </span>
-      <span class="b-contact-name">Flickr</span>
-      <span class="b-contact-val">shirvana</span>
-      <span class="b-contact-arr">↗</span>
-    </a>
-
-  </div>
-</div><!-- /b-bento -->
-
-<!-- ══════════════════════════════════ FOOTER ═══════════════ -->
-<footer class="b-footer">
-  <div class="b-footer-inner">
-    <a href="#" class="b-footer-logo">ehsan<span>.codes</span></a>
-    <p class="b-footer-text">This site has better uptime than my Monday mornings</p>
-    <p class="b-footer-text">© 2026 Ehsan Shirvanian</p>
+      <span class="t-status-item t-status-ok">✓ build passing</span>
+    </div>
+    <p class="t-status-center">ehsan.codes — this site has better uptime than my Monday mornings</p>
+    <div class="t-status-group">
+      <span class="t-status-item">UTF-8</span>
+      <span class="t-status-item">LF</span>
+      <span class="t-status-item">© 2026 Ehsan Shirvanian</span>
+    </div>
   </div>
 </footer>
 

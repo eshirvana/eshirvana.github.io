@@ -19,8 +19,29 @@
     }, delay);
   }
 
-  document.querySelectorAll('.b-scramble').forEach(function (el, i) {
-    scramble(el, el.dataset.text, 160 + i * 220);
+  document.querySelectorAll('.t-scramble').forEach(function (el, i) {
+    scramble(el, el.dataset.text, 900 + i * 260);
+  });
+}());
+
+/* ─── TYPEWRITER ───────────────────────────────────────────
+   Terminal command / output lines type themselves out
+   ─────────────────────────────────────────────────────────── */
+(function () {
+  function typewriter(el, text, delay, speed) {
+    el.textContent = '';
+    setTimeout(function () {
+      var i = 0;
+      var id = setInterval(function () {
+        i++;
+        el.textContent = text.slice(0, i);
+        if (i >= text.length) clearInterval(id);
+      }, speed);
+    }, delay);
+  }
+
+  document.querySelectorAll('.t-type').forEach(function (el, i) {
+    typewriter(el, el.dataset.text, 200 + i * 550, 38);
   });
 }());
 
@@ -28,32 +49,31 @@
    Scroll state + mobile hamburger overlay
    ─────────────────────────────────────────────────────────── */
 (function () {
-  var nav      = document.getElementById('b-nav');
-  var menuBtn  = document.getElementById('b-menu-btn');
-  var navLinks = document.getElementById('b-nav-links');
+  var nav      = document.getElementById('t-nav');
+  var menuBtn  = document.getElementById('t-menu-btn');
+  var navTabs  = document.getElementById('t-nav-tabs');
 
   window.addEventListener('scroll', function () {
     nav.classList.toggle('scrolled', window.scrollY > 40);
   }, { passive: true });
 
   menuBtn.addEventListener('click', function () {
-    var open = navLinks.classList.toggle('open');
+    var open = navTabs.classList.toggle('open');
     menuBtn.classList.toggle('open', open);
     document.body.style.overflow = open ? 'hidden' : '';
   });
 
-  navLinks.querySelectorAll('.b-nav-link').forEach(function (link) {
+  navTabs.querySelectorAll('.t-tab').forEach(function (link) {
     link.addEventListener('click', function () {
-      navLinks.classList.remove('open');
+      navTabs.classList.remove('open');
       menuBtn.classList.remove('open');
       document.body.style.overflow = '';
     });
   });
 }());
 
-/* ─── CARD REVEAL ──────────────────────────────────────────
-   Each bento card fades + slides up as it enters the viewport.
-   Above-fold cards (intro, stats) use transition-delay stagger.
+/* ─── REVEAL ─────────────────────────────────────────────────
+   Each window/panel fades + slides up as it enters the viewport.
    ─────────────────────────────────────────────────────────── */
 (function () {
   var obs = new IntersectionObserver(function (entries) {
@@ -65,42 +85,24 @@
     });
   }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
 
-  document.querySelectorAll('.b-card').forEach(function (el) {
+  document.querySelectorAll('.t-reveal').forEach(function (el) {
     obs.observe(el);
   });
 }());
 
-/* ─── COUNT-UP ─────────────────────────────────────────────
-   Animate stat numbers when they scroll into view
+/* ─── SPOTLIGHT ─────────────────────────────────────────────
+   Tracks the cursor per-panel and feeds it to the CSS spotlight
+   gradient (--mx / --my) defined in style.css
    ─────────────────────────────────────────────────────────── */
 (function () {
-  function countUp(el, target) {
-    var step = target / 64;
-    var val  = 0;
-    var id   = setInterval(function () {
-      val += step;
-      if (val >= target) {
-        el.textContent = target >= 1000 ? (target / 1000) + 'K' : target;
-        clearInterval(id);
-      } else {
-        var v = Math.floor(val);
-        el.textContent = v >= 1000 ? Math.floor(v / 1000) + 'K' : v;
-      }
-    }, 16);
-  }
+  if (window.matchMedia('(hover: none)').matches) return;
 
-  var obs = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) {
-        var t = parseInt(e.target.dataset.target, 10);
-        if (!isNaN(t)) countUp(e.target, t);
-        obs.unobserve(e.target);
-      }
+  document.querySelectorAll('.t-window, .t-panel').forEach(function (card) {
+    card.addEventListener('mousemove', function (e) {
+      var rect = card.getBoundingClientRect();
+      card.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
+      card.style.setProperty('--my', (e.clientY - rect.top) + 'px');
     });
-  }, { threshold: 0.6 });
-
-  document.querySelectorAll('[data-target]').forEach(function (el) {
-    obs.observe(el);
   });
 }());
 
@@ -108,7 +110,7 @@
    dark ↔ light with localStorage persistence
    ─────────────────────────────────────────────────────────── */
 (function () {
-  var btn = document.getElementById('b-theme-btn');
+  var btn = document.getElementById('t-theme-btn');
   if (!btn) return;
 
   btn.addEventListener('click', function () {
