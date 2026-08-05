@@ -183,6 +183,7 @@ em { font-style: normal; }
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-left: auto;
   flex-shrink: 0;
   z-index: 310;
 }
@@ -543,7 +544,7 @@ em { font-style: normal; }
 
 /* ─── RESPONSIVE — tablet ────────────────────────────────── */
 @media (max-width: 720px) {
-  .t-name { font-size: clamp(30px, 10vw, 56px); }
+  .t-name { font-size: clamp(30px, 14vw, 56px); }
   .t-status-center { order: 3; width: 100%; text-align: left; }
 }
 
@@ -564,6 +565,9 @@ em { font-style: normal; }
   .t-nav-tabs.open .t-tab { font-size: 18px; color: var(--text); border: none; }
 
   .t-menu-btn { display: flex; }
+
+  .t-cta-row { gap: 8px; flex-wrap: nowrap; }
+  .t-btn { padding: 10px 14px; }
 
   .t-window-body { padding: 18px 18px 22px; }
   .t-lines li, .t-json-row, .t-env-row { padding-left: 50px; }
